@@ -1,0 +1,14 @@
+POST http://localhost:3000/comments HTTP/1.1
+content-type: application/json
+
+{
+    "text": "Username 1",
+    "user": "673e422d126856e15636435e",
+    "parent": "673e54f057979795430c6599"
+}
+
+###
+GET http://localhost:3000/comments HTTP/1.1
+
+###
+GET http://localhost:3000/comments?parent=673e54f057979795430c6599 HTTP/1.1
